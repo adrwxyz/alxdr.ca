@@ -47,6 +47,22 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-ackee-tracker",
+      options: {
+          // Domain ID found when adding a domain in the admin panel.
+          domainId: "e08ff09c-922f-41f7-a4c1-d330c979a4f4",
+          // URL to Server eg: "https://analytics.test.com".
+          server: "https://ackee.adrw.xyz",
+          // Disabled analytic tracking when running locally
+          // IMPORTANT: Set this back to false when you are done testing
+          ignoreLocalhost: true,
+          // If enabled it will collect info on OS, BrowserInfo, Device  & ScreenSize
+          // False due to detailed information being personalized:
+          // https://github.com/electerious/Ackee/blob/master/docs/Anonymization.md#personal-data
+          detailed: false
+      }
+    },
+    {
       resolve: "gatsby-plugin-matomo",
       options: {
         siteId: "6",
