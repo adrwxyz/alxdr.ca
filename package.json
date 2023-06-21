@@ -27,7 +27,7 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
-    "@misk/prettier": "0.1.26",
+    "@misk/prettier": "0.6.3",
     "cross-env": "7.0.3",
     "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.18"
   },
